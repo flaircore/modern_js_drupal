@@ -23,18 +23,12 @@ class ReactJsBlock extends BlockBase {
     $node = \Drupal::routeMatch()->getParameter('node');
     if ($node instanceof \Drupal\node\NodeInterface) {
       $nid = $node->id();
-      $title = $node->getTitle();
+      $nodeTitle = $node->getTitle();
     }
 
     return [
       '#theme' => 'react_js_block',
-      '#node_title' => t('React and Node title'),
-      /*
-      '#attached' => [
-        'library' => [
-          'modern_js_drupal/react_local'
-        ],
-      ],*/
+      '#node_title' => $this->t($nodeTitle),
     ];
   }
 
