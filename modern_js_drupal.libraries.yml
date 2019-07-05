@@ -1,0 +1,15 @@
+react_local:
+  version: 1.x
+  js:
+    react_js/build/main.js: {}
+  css:
+    layout:
+      react_js/build/main.css: {}
+
+vue_local:
+  version: 1.x
+  css:
+    layout:
+      vue_js/dist/app.css: {}
+  js:
+    vue_js/dist/app.js: {}

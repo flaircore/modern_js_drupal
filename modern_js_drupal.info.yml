@@ -1,0 +1,5 @@
+name: 'Modern Js Drupal'
+type: module
+description: 'Module contains files for decoubled blocks with modern js libraries eg react/vue'
+core: 8.x
+package: 'Tests'
