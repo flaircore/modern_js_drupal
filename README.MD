@@ -4,5 +4,7 @@ Contains code example for a way to integrate react in drupal with custom webpack
 
 ### Blogs @:
 * https://flaircore.com/blog/reactjs-drupal-webpack
-* dev.to
+* https://dev.to/nickbahson/reactjs-in-drupal-with-webpack-5a7b
 
+### Example view:
+![React component/app on a page](/react_on_a_pagepng).
