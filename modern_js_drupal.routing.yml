@@ -1,0 +1,7 @@
+modern_js_drupal.controller_view:
+  path: '/modern-js-drupal'
+  defaults:
+    _controller: '\Drupal\modern_js_drupal\Controller\MjController::show'
+    _title: 'React on Page'
+  requirements:
+    _permission: 'access content'

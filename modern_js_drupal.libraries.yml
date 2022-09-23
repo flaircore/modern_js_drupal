@@ -1,15 +1,15 @@
-react_local:
-  version: 1.x
+react_block:
+  version: VERSION
   js:
-    react_js/build/main.js: {}
+    dist/block.bundle.js: {}
   css:
-    layout:
-      react_js/build/main.css: {}
+    component:
+      dist/block.css: { }
 
-vue_local:
-  version: 1.x
-  css:
-    layout:
-      vue_js/dist/app.css: {}
+react_controller:
+  version: VERSION
   js:
-    vue_js/dist/app.js: {}
+    dist/controller.bundle.js: {}
+  css:
+    component:
+      dist/controller.css: { }

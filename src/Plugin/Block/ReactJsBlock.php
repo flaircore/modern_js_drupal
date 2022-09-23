@@ -8,8 +8,9 @@ use Drupal\Core\Block\BlockBase;
  * Provides a 'ReactJsBlock' block.
  *
  * @Block(
- *  id = "react_js_block",
- *  admin_label = @Translation("React js block"),
+ *   id = "react_js_block",
+ *   admin_label = @Translation("React js block"),
+ *   category = @Translation("Modern Js Drupal"),
  * )
  */
 class ReactJsBlock extends BlockBase {
@@ -18,17 +19,12 @@ class ReactJsBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-
-    $nid = 0;
-    $node = \Drupal::routeMatch()->getParameter('node');
-    if ($node instanceof \Drupal\node\NodeInterface) {
-      $nid = $node->id();
-      $nodeTitle = $node->getTitle();
-    }
-
+    $markup = '<div> <h1>React on a Block</h1><div id="react-block"></div> </div>';
     return [
-      '#theme' => 'react_js_block',
-      '#node_title' => $this->t($nodeTitle),
+      '#markup' => $markup,
+      '#attached' => [
+        'library' => 'modern_js_drupal/react_block',
+      ],
     ];
   }
 
