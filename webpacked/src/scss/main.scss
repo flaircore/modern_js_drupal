@@ -1,0 +1,21 @@
+// start of scss/main.scss
+@import "variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+//@import "form";
+
+.page-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  /* identical to box height, or 146% */
+  text-align: center;
+  letter-spacing: 0.26px;
+  color: #000000;
+  padding: $general_padding;
+  margin-top: 1em;
+}
+
+// end of scss/main.scss

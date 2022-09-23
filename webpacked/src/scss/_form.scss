@@ -1,0 +1,144 @@
+.product-form {
+  //font-family: 'Roboto', sans-serif;
+  display: grid;
+  gap: 1em;
+
+  .pricing {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: .8em;
+    padding-top: .8em;
+    color: #000000;
+  }
+
+  .title-description {
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: .8em;
+    color: #555555;
+  }
+
+  .section-title,
+  .title-description {
+    line-height: 30px;
+    letter-spacing: 0.26px;
+  }
+
+
+  label {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.26px;
+    color: #555555;
+
+    .optional {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.26px;
+    }
+  }
+
+  .general-info,
+  .pricing {
+    display: grid;
+    padding: 20px;
+
+    .user-inputs {
+      display: grid;
+      // @todo 1fr 1fr make responsive
+      //grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      //grid-gap: 30px; // general vs specific postcss so no need for fallback
+      gap: 30px;
+    }
+
+    // form-group is inside user-inputs
+    .form-group {
+      display: grid;
+    }
+
+    .description {
+      font-weight: 300;
+      font-size: .9em;
+      color: #555555;
+    }
+  }
+
+  .billing-type {
+    display: flex;
+    gap: 0;
+    .button {
+      margin-left: -.3em;
+
+      input {
+        border: none;
+        padding: 16px 32px;
+      }
+    }
+  }
+
+  .another-group {
+    input {
+      background: #FFFFFF;
+      border: 1px solid #EDEDED;
+      border-radius: 4px;
+      padding: 1em .8em;
+      margin: 4px 2px;
+      font-weight: 400;
+    }
+  }
+
+  .form-actions {
+    padding: .2em 1.5em 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+
+    input {
+      background: #FFFFFF;
+      border: 1px solid #EDEDED;
+      border-radius: 4px;
+      color: #000000;
+      padding: .8em 2em;
+    }
+  }
+
+  input.disabled {
+    background: #F5F5F5;
+    color: #6B6B6B;
+  }
+
+  input.selected {
+    background: #D4E2FF;
+    color: #286EF1;
+  }
+
+  .form-group input {
+    color: #555555;
+    padding: 1em .8em;
+    margin: 4px 2px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.26px;
+
+  }
+
+  input[type=button], input[type=submit] {
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.26px;
+    text-align: center;
+  }
+
+}
