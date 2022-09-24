@@ -131,7 +131,7 @@ const App = ({appTitle}) => {
     );
 };
 
-App.prototype = {
+App.propTypes = {
   appTitle: PropTypes.string.isRequired
 }
 
